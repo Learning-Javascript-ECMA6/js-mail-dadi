@@ -12,3 +12,5 @@
 //creo la mia lista invitati utilizzando un array
 var list =["primo@gmail.com", "secondo@gmail.com","terzo@gmail.com","quarto@gmail.com","quinto@gmail.com","sesto@gmail.com","settimo@gmail.com","nono@gmail.com","decimo@gmail.com"];
 console.log(list);
+
+prompt("ciao, inserisci il tuo indirizzo mail per partecipare alla festa");
