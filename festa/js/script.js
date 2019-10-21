@@ -18,15 +18,18 @@ var mail = prompt("ciao, inserisci il tuo indirizzo mail per partecipare alla fe
 
 //verifico inserimento email utente
 for (var i = 0; i <= list.length; i++) {
- if (mail === list[i]){
+ if (mail === list[i] , i){
+  console.log(list[i] , i)
+  console.log(list[i]);
   trovato = true ;
+
   //se è in lista partecipa
-  console.log("benvenuto alla festa" );
+  console.log("Benvenuto alla festa, la parola d'ordine è FIDELIO");
   var invito = true;
  }
 }
 
 //se l email non è in lista non partecipa
 if (invito !== true){
- console.log("non sei nella lista");
+ console.log("Spiacente, il suo nome non è nella lista, verifichi di aver inserito correttamente il suo indirizzo email oppure cerchi un altra festa, grazie");
 }
