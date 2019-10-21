@@ -1,5 +1,39 @@
+/* regole generali */
 * {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+}
+
+body{
+ background-color: rgb(25, 119, 66);
+}
+
+/* titolo */
+h1{
+ margin-left: 480px;
+ color: rgb(133, 28, 59);
+}
+
+/* blocco dati */
+.dadi{
+ margin-top: 70px;
+ margin-left: 100px;
+}
+
+/* bottone */
+#btn{
+ border: 5px outset purple;
+ padding: 20px;
+ text-align: center;
+ background-color: lightgreen;
+ margin-left:460px;
+ font-weight: bold;
+ font-size: 20px;
+ cursor: pointer;
+}
+
+/* immagine */
+img{
+ margin-left: 110px;
 }
