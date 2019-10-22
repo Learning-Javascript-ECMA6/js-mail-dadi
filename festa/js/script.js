@@ -13,10 +13,18 @@
 var list =["primo@gmail.com", "secondo@gmail.com","terzo@gmail.com","quarto@gmail.com","quinto@gmail.com","sesto@gmail.com","settimo@gmail.com","nono@gmail.com","decimo@gmail.com"];
 console.log(list);
 
+//provo ad inserire funzione
+function prova() {
+//console.log(prova);
+
 //chiedo all'utente di inserire il suo nome
 var nome = prompt("Ciao, come ti chiami?")
+//console.log(nome);
+
 //chiedo all'utente di inserire la sua email utilizzando prompt e assegnando variabile input
 var mail = prompt("ciao, "+ nome + " inserisci il tuo indirizzo mail per partecipare alla festa");
+//console.log(mail);
+
 
 //verifico inserimento email utente
 for (var i = 0; i <= list.length; i++) {
@@ -35,4 +43,5 @@ for (var i = 0; i <= list.length; i++) {
 //se l email non è in lista non partecipa
 if (invito !== true){
  document.getElementById('shut').innerHTML =("Pensavi di imbucarti alla festa " + nome + " ? Il tuo nome non è nella lista, ti affido a questi due..");
+}
 }
