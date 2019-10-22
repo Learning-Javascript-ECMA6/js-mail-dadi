@@ -32,7 +32,7 @@ for (var i = 0; i <= list.length; i++) {
  if (mail === list[i]){
 
   //console.log(list[i]);
-  trovato = true ;
+  invito = true ;
 
   //se è in lista partecipa
  document.getElementById("wide").innerHTML = ("Benvenuto alla festa " + nome +  " la parola d'ordine è FIDELIO"  + "<img src='../festa/img/tom.jpg'>");
