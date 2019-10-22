@@ -35,13 +35,13 @@ for (var i = 0; i <= list.length; i++) {
   trovato = true ;
 
   //se è in lista partecipa
- document.getElementById('wide').innerHTML = ("Benvenuto alla festa " + nome +  " la parola d'ordine è FIDELIO");
+ document.getElementById("wide").innerHTML = ("Benvenuto alla festa " + nome +  " la parola d'ordine è FIDELIO"  + "<img src='../festa/img/tom.jpg'>");
   var invito = true;
  }
 }
 
 //se l email non è in lista non partecipa
 if (invito !== true){
- document.getElementById('shut').innerHTML =("Pensavi di imbucarti alla festa " + nome + " ? Il tuo nome non è nella lista, ti affido a questi due..");
+ document.getElementById("shut").innerHTML =("Pensavi di imbucarti alla festa " + nome + " ? Il tuo nome non è nella lista, ti affido a questi due.." + "<img src='../festa/img/fidelio.jpg'>");
 }
 }

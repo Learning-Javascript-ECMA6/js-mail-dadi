@@ -8,6 +8,7 @@
 body{
  background-color: black;
  color: white;
+ font-family: fantasy;
 }
 
 img{
@@ -23,11 +24,10 @@ img{
 /*  button per partecipare alla festa */
 #btn{
  border: 2px solid red;
- padding: 5px;
+ padding: 10px;
  border-radius: 4px;
  background-color: red;
  font-weight: bold;
- color: white;
  margin: 10px;
  font-size: 20px;
  cursor: pointer;
