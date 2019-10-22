@@ -9,8 +9,7 @@
 
 // assegno variabile giocatori
 var player, computer;
-
-//inserisco funzione per associare il risultato al button
+var foto = ["<img src='../dadi/img/uno.jpg'>","<img src='../dadi/img/due.png'>","<img src='../dadi/img/tre.jpg'>","<img src='../dadi/img/quattro.jpg'>","<img src='../dadi/img/cinque.png'>","<img src='../dadi/img/sei.jpg'>"]
 
 //console.log(gioco);
 
@@ -22,45 +21,31 @@ var player, computer;
   computer = ( "computer", Math.floor(Math.random()* 6 + 1));
   //console.log(computer);
 
- // inserisco immagini da far comparire durante il gioco - vittoria player
-  if (player == 1) {
-    document.getElementById("result1").innerHTML = "<img src='../dadi/img/uno.jpg'>";
-  } else if (player == 2) {
-    document.getElementById("result1").innerHTML = "<img src='../dadi/img/due.png'>";
-  } else if (player == 3) {
-    document.getElementById("result1").innerHTML = "<img src='../dadi/img/tre.jpg'>";
-  } else if (player == 4) {
-    document.getElementById("result1").innerHTML = "<img src='../dadi/img/quattro.jpg'>";
-  } else if (player == 5) {
-    document.getElementById("result1").innerHTML = "<img src='../dadi/img/cinque.png'>";
-  } else if (player == 6) {
-    document.getElementById("result1").innerHTML = "<img src='../dadi/img/sei.jpg'>";
+
+  // Stampo foto player
+  for (var i=0; i<=6; i++) {
+   if(player == i) {
+    //console.log("Foto dado utente" + foto[i-1]);
+    document.getElementById("result1").innerHTML = foto[i-1];
+   }
   }
 
-  // inserisco immagini da far comparire durante il gioco - vittoria computer
-  if (computer == 1) {
-    document.getElementById("result2").innerHTML = "<img src='../dadi/img/uno.jpg'>";
-  } else if (computer == 2) {
-    document.getElementById("result2").innerHTML = "<img src='../dadi/img/due.png'>";
-  } else if (computer == 3) {
-    document.getElementById("result2").innerHTML = "<img src='../dadi/img/tre.jpg'>";
-  } else if (computer == 4) {
-    document.getElementById("result2").innerHTML = "<img src='../dadi/img/quattro.jpg'>";
-  } else if (computer == 5) {
-    document.getElementById("result2").innerHTML = "<img src='../dadi/img/cinque.png'>";
-  } else if (computer == 6) {
-    document.getElementById("result2").innerHTML = "<img src='../dadi/img/sei.jpg'>";
+  // Stampo foto computer
+  for (var i=0; i<=6; i++) {
+   if (computer == i) {
+    //console.log("foto dado pc " + foto[i - 1]);
+    document.getElementById("result2").innerHTML = foto[i-1];
   }
+ }
 
-
-  //eseguo comparazione numeri random
+  //eseguo comparazione numeri random per stampare il risultato del vincitore
   if ( player > computer ){
    //console.log("hai vinto");
    document.getElementById("winfinal").innerHTML = "Hai vinto!!! " + " il tuo risultato è " + player ;
 
   }else if (player < computer)
    //console.log("hai perso");
-     document.getElementById("winfinal").innerHTML = "Hai perso!!! " + " il tuo risultato è " + computer ;
+     document.getElementById("winfinal").innerHTML = "Hai perso!!! " + " il tuo risultato è " + player ;
 
    else{
     //console.log("parità");
