@@ -17,7 +17,7 @@ img{
 
 /* titolo */
 h1{
- color: rgb(133, 28, 59);
+ color: rgb(138, 21, 28);
  text-align: center;
 }
 
@@ -30,7 +30,7 @@ h1{
 
 /* bottone */
 #btn{
- border: 5px outset purple;
+ border: 5px outset rgb(213, 52, 72);
  padding: 20px;
  text-align: center;
  background-color: lightgreen;
@@ -43,9 +43,14 @@ h1{
 .tavolo{
  height: 300px;
  display: flex;
- margin: 20px;
+ margin top: 20px;
+ margin-bottom: 20px;
+ margin-left: 270px;
+ margin-right: 270px;
  border-radius: 10px;
  justify-content: center;
+ border: 18px solid rgb(65, 42, 8);
+
 }
 
 #result1{
@@ -70,7 +75,7 @@ h1{
  font-size: 20px;
  color: white;
  text-align: center;
- border: 3px solid white;
+ border: 3px solid rgb(213, 52, 72);
  border-radius: 6px;
  padding: 10px;
 }
