@@ -1,3 +1,4 @@
+/* regole generali */
 * {
  margin: 0;
  padding: 0;
@@ -9,18 +10,20 @@ body{
  color: white;
 }
 
+img{
+ max-width: 100%;
+}
+
+/* container */
 .fidelio{
  display: flex;
 }
 
+/* item */
 .eyes {
  flex-basis: 50%;
  height: 300px;
  background-size: cover;
  text-align: center;
  font-size: 30px;
-}
-
-img{
- max-width: 100%;
 }

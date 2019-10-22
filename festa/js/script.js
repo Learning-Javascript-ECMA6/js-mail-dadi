@@ -13,16 +13,17 @@
 var list =["primo@gmail.com", "secondo@gmail.com","terzo@gmail.com","quarto@gmail.com","quinto@gmail.com","sesto@gmail.com","settimo@gmail.com","nono@gmail.com","decimo@gmail.com"];
 console.log(list);
 
+//chiedo all'utente di inserire il suo nome
 var nome = prompt("Ciao, come ti chiami?")
 //chiedo all'utente di inserire la sua email utilizzando prompt e assegnando variabile input
 var mail = prompt("ciao, "+ nome + " inserisci il tuo indirizzo mail per partecipare alla festa");
 
 //verifico inserimento email utente
 for (var i = 0; i <= list.length; i++) {
- console.log(list[i] , i)
+ //console.log(list[i] , i)
  if (mail === list[i]){
 
-  console.log(list[i]);
+  //console.log(list[i]);
   trovato = true ;
 
   //se è in lista partecipa
