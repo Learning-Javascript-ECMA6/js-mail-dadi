@@ -7,18 +7,25 @@
 
 body{
  background-color: rgb(25, 119, 66);
+ font-family: verdana;
+}
+
+img{
+ max-height: 150px;
+ border-radius: 14px;
 }
 
 /* titolo */
 h1{
- margin-left: 480px;
  color: rgb(133, 28, 59);
+ text-align: center;
 }
 
 /* blocco dati */
 .dadi{
- margin-top: 70px;
- margin-left: 100px;
+ padding: 60px;
+ display:flex;
+ flex-direction: column;
 }
 
 /* bottone */
@@ -27,14 +34,43 @@ h1{
  padding: 20px;
  text-align: center;
  background-color: lightgreen;
- margin-left:460px;
  font-weight: bold;
  font-size: 20px;
  cursor: pointer;
 }
 
-/* immagine */
-img{
- margin-top: 30px;
- margin-left: 110px;
+/* blocco immagine */
+.tavolo{
+ height: 300px;
+ display: flex;
+ margin: 20px;
+ border-radius: 10px;
+ justify-content: center;
+}
+
+#result1{
+ flex-basis: 50%;
+ padding: 30px;
+ display: flex;
+ justify-content: flex-end;
+}
+#result2{
+ flex-basis: 50%;
+ padding: 30px;
+}
+
+/* blocco risultati */
+.win{
+ display: flex;
+ justify-content: center;
+}
+
+#winfinal{
+ width: 300px;
+ font-size: 20px;
+ color: white;
+ text-align: center;
+ border: 3px solid white;
+ border-radius: 6px;
+ padding: 10px;
 }

@@ -8,16 +8,32 @@
  </head>
   <body>
 
+
+
+
    <!-- blocco centrale -->
    <div class="dadi">
+
     <!-- titolo gioco -->
     <h1>Il gioco dei dadi</h1><br>
+
     <!-- bottone per giocare -->
-    <button id="btn" onclick="gioco()">clicca qui per giocare</button><br>
-    <!-- immagine  -->
-    <img src="../dadi/img/dadi.jpg" alt="">
+    <button id="btn" onclick="location.reload()">clicca qui per giocare</button><br>
    </div>
 
+   <!-- blocco immagine -->
+   <div class="tavolo">
+    <div id="result1">
+    </div>
+
+    <div id="result2">
+    </div>
+   </div>
+
+   <!-- blocco risultati -->
+   <div class="win">
+    <h3 id="winfinal"></h3>
+   </div>
 
   <!-- javascript -->
   <script type="text/javascript" src= "../dadi/js/script.js"></script>
