@@ -9,9 +9,7 @@
 
 // assegno variabile giocatori
 var player, computer;
-var foto = ["<img src='../dadi/img/uno.jpg'>","<img src='../dadi/img/due.png'>","<img src='../dadi/img/tre.jpg'>","<img src='../dadi/img/quattro.jpg'>","<img src='../dadi/img/cinque.png'>","<img src='../dadi/img/sei.jpg'>"]
-
-//console.log(gioco);
+var foto = ["<img src='../dadi/img/uno.jpg'>","<img src='../dadi/img/due.png'>","<img src='../dadi/img/tre.jpg'>","<img src='../dadi/img/quattro.jpg'>","<img src='../dadi/img/cinque.png'>","<img src='../dadi/img/sei.jpg'>"];
 
   //scrivo formula per far comparire numero random giocatore 1
   player = ("player ", Math.floor(Math.random()* 6 + 1));
